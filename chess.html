@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+
+  <div class="board">
+  
+    <div class="row">
+        <div class="square white"  row="8" file="1" state="black" type="only"><img class="QBrook" piece="rook" moved="false" color="black" draggable="true" src="./img/chess set/black rook.svg" alt=""></div>
+        <div class="square black source" row="8" file="2" state="black"><img class="drag" piece="knight"  color="black" src="./img/chess set/black knight.svg"  draggable="true"alt=""></div>
+        <div class="square white" row="8" file="3" state="black"><img  piece="bishop" color="black"moved="false" src="./img/chess set/black bishop.svg" alt=""></div>
+        <div class="square black" row="8" file="4" state="black"><img  piece="queen" color="black" src="./img/chess set/black queen.svg" alt=""></div>
+        <div class="square white" row="8" file="5"state="black"><img  class="black-king" piece="king"moved="false" color="black" src="./img/chess set/black king.svg" alt=""></div>
+        <div class="square black"row="8" file="6" state="black"><img  piece="bishop" color="black"moved="false" src="./img/chess set/black bishop.svg" alt=""></div>
+        <div class="square white"row="8" file="7" state="black"><img  piece="knight"color="black"moved="false" src="./img/chess set/black knight.svg" alt=""></div>
+        <div class="square black"row="8" file="8" state="black"><img class="KBrook" piece="rook" color="black" moved="false" src="./img/chess set/black rook.svg" alt=""></div>
+    </div>
+    <div class="row">
+        <div class="square black" row="7" file="1" state="black"><img  piece="pawn"color="black" moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square white" row="7" file="2" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square black" row="7" file="3" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square white" row="7" file="4" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square black" row="7" file="5" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square white" row="7" file="6" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square black"row="7" file="7" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+        <div class="square white"row="7" file="8" state="black"><img  piece="pawn"color="black"moved="false" src="./img/chess set/black pawn.svg" alt=""></div>
+
+    </div>
+    <div class="row">
+        <div class="square white destination"  row="6" file="1"  state="empty"></div>
+        <div class="square black" row="6" file="2" state="empty"></div>
+        <div class="square white" row="6" file="3" state="empty"></div>
+        <div class="square black" row="6" file="4" state="empty"></div>
+        <div class="square white" row="6" file="5" state="empty"></div>
+        <div class="square black" row="6" file="6" state="empty"></div>
+        <div class="square white" row="6" file="7" state="empty"></div>
+        <div class="square black" row="6" file="8" state="empty"></div>
+        
+
+    </div>
+        
+    <div class="row">
+        <div class="square black"row="5" file="1" state="empty"></div>
+        <div class="square white"row="5" file="2" state="empty"></div>
+        <div class="square black"row="5" file="3" state="empty"></div>
+        <div class="square white"row="5" file="4" state="empty"></div>
+        <div class="square black"row="5" file="5" state="empty"></div>
+        <div class="square white"row="5" file="6" state="empty"></div>
+        <div class="square black"row="5" file="7" state="empty"></div>
+        <div class="square white"row="5" file="8" state="empty"></div>
+    </div>
+    <div class="row">
+        <div class="square white" row="4" file="1" state="empty"></div>
+        <div class="square black" row="4" file="2" state="empty"></div>
+        <div class="square white" row="4" file="3" state="empty"></div>
+        <div class="square black" row="4" file="4" state="empty"></div>
+        <div class="square white"row="4" file="5"  state="empty"></div>
+        <div class="square black" row="4" file="6" state="empty"></div>
+        <div class="square white" row="4" file="7" state="empty"></div>
+        <div class="square black" row="4" file="8" state="empty"></div>
+        
+
+    </div>
+    <div class="row">
+        <div class="square black"row="3" file="1" state="empty"></div>
+        <div class="square white"row="3" file="2" state="empty"></div>
+        <div class="square black" row="3" file="3" state="empty"></div>
+        <div class="square white"row="3" file="4" state="empty"></div>
+        <div class="square black" row="3" file="5"  state="empty"></div>
+        <div class="square white"row="3" file="6" state="empty"></div>
+        <div class="square black" row="3" file="7"state="empty"></div>
+        <div class="square white" row="3" file="8"state="empty"></div>
+    </div>
+    <div class="row">
+        <div class="square white"row="2" file="1" state="white"><img  piece="pawn" color="white" moved="false"src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square black" row="2" file="2"state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square white" row="2" file="3"state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square black"row="2" file="4" state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square white"row="2" file="5" state="white"><img  piece="pawn"  color="white"moved="false"src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square black"row="2" file="6" state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square white"row="2" file="7" state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+        <div class="square black" row="2" file="8"state="white"><img  piece="pawn" color="white"moved="false" src="./img/chess set/white pawn.svg" alt=""></div>
+    </div>
+    <div class="row">
+        
+        <div class="square black" row="1" file="1"  state="white"><img class="QWrook"piece="rook"moved="false" color="white" src="./img/chess set/white rook.svg" alt=""></div>
+        <div class="square white b1" row="1" file="2"state="white"><img   piece="knight" color="white"src="./img/chess set/white knight.svg" alt=""></div>
+        <div class="square black c1" row="1" file="3"state="white"><img  piece="bishop" color="white"src="./img/chess set/white bishop.svg" alt=""></div>
+        <div class="square white d1" row="1" file="4"state="white"><img  piece="queen" color="white"src="./img/chess set/white queen.svg" alt=""></div>
+        <div class="square black" row="1" file="5"state="white"><img class="white-king" moved="false"piece="king"color="white"src="./img/chess set/white king.svg" alt=""></div>
+        <div class="square white f1" row="1" file="6"state="white"><img  piece="bishop"color="white" src="./img/chess set/white bishop.svg" alt=""></div>
+        <div class="square black g1" row="1" file="7"state="white"><img  piece="knight" color="white" src="./img/chess set/white knight.svg" alt=""></div>
+        <div class="square white" row="1" file="8"state="white"><img class="KWrook"  piece="rook" moved="false"color="white" src="./img/chess set/white rook.svg" alt=""></div>
+    </div>
+    
+  </div>
+  <div class="buttons">
+    <button class="forward-btn">forward</button>
+    <button class="backward-btn">go back</button>
+    
+</div>
+
+<script src="./chess.js"></script>
+
+    
+</body>
+</html>

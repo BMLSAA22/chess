@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin: 0;
+}
+html.busy, html.busy * {
+    cursor: wait !important;
+  }
+body{
+    background-color:white;
+    position:absolute;
+}
+.board{
+    margin: 20%;
+    position:relative;
+    background-color: blue;
+    height:min(70vw,70vh);
+    width:min(70vw,70vh);
+    overflow: hidden;
+}
+.row{
+    background: #000;
+    position:relative;
+    height:12.5%;
+    width:100%;
+    display:flex;
+    margin:0;
+}
+
+.square{
+    position:relative;
+    height:100%;
+    width:12.5%;
+    animation-duration: 1s;
+    touch-action: none;
+
+}
+.white{
+    background: white;
+
+}
+.black{
+    background: grey;
+}
+.square img{
+    position:relative;
+    z-index: 10000;
+    height:90%;
+    width:90%;
+    top:5%;
+    left:5%;
+    cursor:move;
+    
+}
+.active{
+    opacity: 0.9;
+}
+.buttons{
+    padding:10px;
+   
+}
+.buttons * {
+    padding:10px;
+    background: green;
+
+    font-size:20px;
+}
+
